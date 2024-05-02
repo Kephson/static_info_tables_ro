@@ -1,40 +1,53 @@
 {
-  "name": "renolit/static-info-tables-ro",
-  "description": "Romanian (ro) language pack for the Static Info Tables providing localized names for countries.",
-  "type": "typo3-cms-extension",
-  "license": [
-    "GPL-2.0-or-later"
-  ],
-  "keywords": [
-    "TYPO3 CMS",
-    "Static Info Tables"
-  ],
-  "support": {
-    "issues": "https://github.com/Kephson/static_info_tables_ro/issues"
-  },
-  "authors": [
-    {
-      "name": "Ephraim Härer",
-      "role": "Developer"
-    },
-    {
-      "name": "Timo Feuerstein",
-      "role": "Developer"
-    }
-  ],
-  "replace": {
-    "typo3-ter/static-info-tables-ro": "self.version"
-  },
-  "require": {
-    "php": "^7.2 || ^8.0",
-    "typo3/cms-core": ">=11.5, <12.0",
-    "typo3/cms-extbase": ">=11.5, <12.0",
-    "typo3/cms-extensionmanager": ">=11.5, <12.0",
-    "sjbr/static-info-tables": "^11.5"
-  },
-  "extra": {
-    "typo3/cms": {
-      "extension-key": "static_info_tables_ro"
-    }
-  }
+	"name": "renolit/static-info-tables-ro",
+	"description": "Romanian (ro) language pack for the Static Info Tables providing localized names for countries.",
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"type": "typo3-cms-extension",
+	"keywords": [
+		"TYPO3 CMS",
+		"Static Info Tables"
+	],
+	"authors": [
+		{
+			"name": "Ephraim Härer",
+			"role": "Developer"
+		},
+		{
+			"name": "Timo Feuerstein",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/Kephson/static_info_tables_ro/issues"
+	},
+	"require": {
+		"php": "^8.1",
+		"sjbr/static-info-tables": "^12.4",
+		"typo3/cms-core": "^12.4"
+	},
+	"require-dev": {
+		"ergebnis/composer-normalize": "^2.42"
+	},
+	"replace": {
+		"typo3-ter/static-info-tables-ro": "self.version"
+	},
+	"config": {
+		"allow-plugins": {
+			"ergebnis/composer-normalize": true,
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true
+		},
+		"bin-dir": ".Build/bin",
+		"sort-packages": true,
+		"vendor-dir": ".Build/vendor"
+	},
+	"extra": {
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"extension-key": "static_info_tables_ro",
+			"web-dir": ".Build/public"
+		}
+	}
 }

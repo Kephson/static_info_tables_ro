@@ -11,24 +11,18 @@
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'Static Info Tables (ro)',
     'description' => '(ro) language pack for the Static Info Tables providing localized names for countries.',
+    'version' => '12.4.0',
     'category' => 'misc',
-    'version' => '11.5.2',
-    'state' => 'stable',
-    'uploadfolder' => false,
-    'createDirs' => '',
-    'clearCacheOnLoad' => false,
-    'author' => 'Ephraim Härer',
-    'author_email' => 'ephraim.haerer@renolit.com',
-    'author_company' => 'RENOLIT SE',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-11.5.99',
-            'static_info_tables' => '11.5.0-11.5.99',
-            'extbase' => '11.5.0-11.5.99',
-            'extensionmanager' => '11.5.0-11.5.99',
+            'typo3' => '12.4.0-12.4.99',
+            'static_info_tables' => '12.4.0-12.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
     ],
+    'author' => 'Ephraim Härer',
+    'author_email' => 'ephraim.haerer@renolit.com',
+    'author_company' => 'RENOLIT SE',
 );
 

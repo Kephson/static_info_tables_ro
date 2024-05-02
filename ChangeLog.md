@@ -3,6 +3,9 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/).
 
+### 2024-05-02  Ephraim Härer  <ephraim.haerer@renolit.com>
+- updated for TYPO3 12.4
+
 ### 2022-11-21  Ephraim Härer  <ephraim.haerer@renolit.com>
 
 - fixed typo in TypoScript filename and ext_localconf.php
