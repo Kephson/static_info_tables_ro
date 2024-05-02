@@ -26,10 +26,10 @@ namespace SJBR\StaticInfoTablesRo;
  *  This copyright notice MUST APPEAR in all copies of the script!
  */
 
+use Exception;
 use SJBR\StaticInfoTables\Cache\ClassCacheManager;
 use SJBR\StaticInfoTables\Utility\DatabaseUpdateUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 
 /**
@@ -44,20 +44,20 @@ class ext_update
      * Main function, returning the HTML content
      *
      * @return string HTML
+     * @throws Exception
      */
-    public function main()
+    public function main(): string
     {
         $content = '';
-        $objectManager = GeneralUtility::makeInstance(ObjectManager::class);
 
         // Clear the class cache
         /** @var ClassCacheManager $classCacheManager */
-        $classCacheManager = $objectManager->get(ClassCacheManager::class);
+        $classCacheManager = GeneralUtility::makeInstance(ClassCacheManager::class);
         $classCacheManager->reBuild();
 
         // Update the database
         /** @var DatabaseUpdateUtility $databaseUpdateUtility */
-        $databaseUpdateUtility = $objectManager->get(DatabaseUpdateUtility::class);
+        $databaseUpdateUtility = GeneralUtility::makeInstance(DatabaseUpdateUtility::class);
         $databaseUpdateUtility->doUpdate(self::EXTENSION_KEY);
 
         $updateLanguageLabels = LocalizationUtility::translate('updateLanguageLabels', 'StaticInfoTables');
@@ -68,7 +68,7 @@ class ext_update
     /**
      * @return bool
      */
-    public function access()
+    public function access(): bool
     {
         return true;
     }
