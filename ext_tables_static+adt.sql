@@ -246,7 +246,7 @@ UPDATE static_countries SET cn_short_ro='Guernsey' WHERE cn_iso_2='GG';
 UPDATE static_countries SET cn_short_ro='Insula Man' WHERE cn_iso_2='IM';
 UPDATE static_countries SET cn_short_ro='Sf. Martin' WHERE cn_iso_2='MF';
 UPDATE static_countries SET cn_short_ro='Saint Barthélemy' WHERE cn_iso_2='BL';
-UPDATE static_countries SET cn_short_ro='Bonaire, Sint Eustatius și Saba' WHERE WHERE cn_iso_2='BQ';
+UPDATE static_countries SET cn_short_ro='Bonaire, Sint Eustatius și Saba' WHERE cn_iso_2='BQ';
 UPDATE static_countries SET cn_short_ro='Curaçao' WHERE cn_iso_2='CW';
 UPDATE static_countries SET cn_short_ro='Sint Maarten' WHERE cn_iso_2='SX';
 UPDATE static_countries SET cn_short_ro='Sudanul de Sud' WHERE cn_iso_2='SS';
