@@ -49,5 +49,19 @@
 			"extension-key": "static_info_tables_ro",
 			"web-dir": ".Build/public"
 		}
+	},
+	"scripts": {
+		"prepare-release": [
+			"@extension-create-libs",
+			"rm -rf .devbox",
+			"rm -rf Tests/",
+			"rm .gitignore",
+			"rm .scrutinizer.yml",
+			"rm disabled.travis.yml",
+			"rm -rf .ddev",
+			"rm -rf .github",
+			"rm -rf .editorconfig",
+			"rm -rf .gitattributes"
+		]
 	}
 }

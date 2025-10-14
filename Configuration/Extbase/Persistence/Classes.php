@@ -2,7 +2,7 @@
 /* * *************************************************************
  *  Copyright notice
  *
- *  (c) 2021 Timo Feuerstein <timo.feuerstein@renolit.com>
+ *  (c) 2021-2025 Timo Feuerstein <timo.feuerstein@renolit.com>
  *
  *  All rights reserved
  *
@@ -24,8 +24,15 @@
  * ************************************************************* */
 
 declare(strict_types=1);
+
+use SJBR\StaticInfoTables\Domain\Model\Country;
+use SJBR\StaticInfoTables\Domain\Model\CountryZone;
+use SJBR\StaticInfoTables\Domain\Model\Currency;
+use SJBR\StaticInfoTables\Domain\Model\Language;
+use SJBR\StaticInfoTables\Domain\Model\Territory;
+
 return [
-    \SJBR\StaticInfoTables\Domain\Model\Country::class => [
+    Country::class => [
         'tableName' => 'static_countries',
         'properties' => [
             'shortNameRo' => [
@@ -33,7 +40,7 @@ return [
             ],
         ],
     ],
-    \SJBR\StaticInfoTables\Domain\Model\CountryZone::class => [
+    CountryZone::class => [
         'tableName' => 'static_country_zones',
         'properties' => [
             'nameRo' => [
@@ -41,7 +48,7 @@ return [
             ],
         ],
     ],
-    \SJBR\StaticInfoTables\Domain\Model\Currency::class => [
+    Currency::class => [
         'tableName' => 'static_currencies',
         'properties' => [
             'nameRo' => [
@@ -52,7 +59,7 @@ return [
             ],
         ],
     ],
-    \SJBR\StaticInfoTables\Domain\Model\Language::class => [
+    Language::class => [
         'tableName' => 'static_languages',
         'properties' => [
             'nameRo' => [
@@ -60,7 +67,7 @@ return [
             ],
         ],
     ],
-    \SJBR\StaticInfoTables\Domain\Model\Territory::class => [
+    Territory::class => [
         'tableName' => 'static_territories',
         'properties' => [
             'nameRo' => [

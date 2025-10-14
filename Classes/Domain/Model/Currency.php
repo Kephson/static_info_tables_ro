@@ -7,7 +7,7 @@ namespace SJBR\StaticInfoTables\Domain\Model;
  *
  *  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
  *  (c) 2013 Stanislas Rolland <typo3(arobas)sjbr.ca>
- *  (c) 2021 Ephraim Härer <ephraim.haerer@renolit.com>
+ *  (c) 2021-2025 Ephraim Härer <ephraim.haerer@renolit.com>
  *
  *  All rights reserved
  *
@@ -41,13 +41,13 @@ class Currency extends AbstractEntity
      * Romanian name of the currency
      * @var string
      */
-    protected $nameRo = '';
+    protected string $nameRo = '';
 
     /**
      * Romanian name of the currency subdivision unit
      * @var string
      */
-    protected $subdivisionNameRo = '';
+    protected string $subdivisionNameRo = '';
 
     /**
      * Sets the Romanian name of the currency
@@ -56,7 +56,7 @@ class Currency extends AbstractEntity
      *
      * @return void
      */
-    public function setNameRo($nameRo)
+    public function setNameRo(string $nameRo): void
     {
         $this->nameRo = $nameRo;
     }
@@ -66,7 +66,7 @@ class Currency extends AbstractEntity
      *
      * @return string
      */
-    public function getNameRo()
+    public function getNameRo(): string
     {
         return $this->nameRo;
     }
@@ -78,7 +78,7 @@ class Currency extends AbstractEntity
      *
      * @return void
      */
-    public function setSubdivisionNameRo($subdivisionNameRo)
+    public function setSubdivisionNameRo(string $subdivisionNameRo): void
     {
         $this->subdivisionNameRo = $subdivisionNameRo;
     }
@@ -88,7 +88,7 @@ class Currency extends AbstractEntity
      *
      * @return string
      */
-    public function getSubdivisionNameRo()
+    public function getSubdivisionNameRo(): string
     {
         return $this->subdivisionNameRo;
     }

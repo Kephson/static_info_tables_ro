@@ -7,7 +7,7 @@ namespace SJBR\StaticInfoTables\Domain\Model;
  *
  *  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
  *  (c) 2013 Stanislas Rolland <typo3(arobas)sjbr.ca>
- *  (c) 2021 Ephraim Härer <ephraim.haerer@renolit.com>
+ *  (c) 2021-2025 Ephraim Härer <ephraim.haerer@renolit.com>
  *
  *  All rights reserved
  *
@@ -40,7 +40,7 @@ class Language extends AbstractEntity
      * Romanian name of the language
      * @var string
      */
-    protected $nameRo = '';
+    protected string $nameRo = '';
 
     /**
      * Sets the Romanian name of the language
@@ -49,7 +49,7 @@ class Language extends AbstractEntity
      *
      * @return void
      */
-    public function setNameRo($nameRo)
+    public function setNameRo(string $nameRo): void
     {
         $this->nameRo = $nameRo;
     }
@@ -59,7 +59,7 @@ class Language extends AbstractEntity
      *
      * @return string
      */
-    public function getNameRo()
+    public function getNameRo(): string
     {
         return $this->nameRo;
     }

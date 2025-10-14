@@ -8,7 +8,7 @@ namespace SJBR\StaticInfoTables\Domain\Model;
  *  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
  *  (c) 2013 Stanislas Rolland <typo3(arobas)sjbr.ca>
  *  (c) 2015 Simon Schmidt <sfs@marketing-factory.de>
- *  (c) 2021 Ephraim Härer <ephraim.haerer@renolit.com>
+ *  (c) 2021-2025 Ephraim Härer <ephraim.haerer@renolit.com>
  *
  *  All rights reserved
  *
@@ -42,21 +42,21 @@ class Country extends AbstractEntity
      *
      * @var string
      */
-    protected $shortNameRo = '';
+    protected string $shortNameRo = '';
 
     /**
      * The Romanian official name
      *
      * @var string
      */
-    protected $officialNameRo = '';
+    protected string $officialNameRo = '';
 
     /**
      * The Romanian capital name
      *
      * @var string
      */
-    protected $capitalRo = '';
+    protected string $capitalRo = '';
 
     /**
      * Sets the Romanian short name.
@@ -64,7 +64,7 @@ class Country extends AbstractEntity
      * @param string $shortNameRo
      * @return void
      */
-    public function setShortNameRo($shortNameRo)
+    public function setShortNameRo(string $shortNameRo): void
     {
         $this->shortNameRo = $shortNameRo;
     }
@@ -74,7 +74,7 @@ class Country extends AbstractEntity
      *
      * @return string
      */
-    public function getShortNameRo()
+    public function getShortNameRo(): string
     {
         return $this->shortNameRo;
     }
@@ -85,7 +85,7 @@ class Country extends AbstractEntity
      * @param string $officialNameRo
      * @return void
      */
-    public function setOfficialtNameRo($officialNameRo)
+    public function setOfficialNameRo(string $officialNameRo): void
     {
         $this->officialNameRo = $officialNameRo;
     }
@@ -95,7 +95,7 @@ class Country extends AbstractEntity
      *
      * @return string
      */
-    public function getOfficialNameRo()
+    public function getOfficialNameRo(): string
     {
         return $this->officialNameRo;
     }
@@ -106,7 +106,7 @@ class Country extends AbstractEntity
      * @param string $capitalRo
      * @return void
      */
-    public function setCapitalRo($capitalRo)
+    public function setCapitalRo(string $capitalRo): void
     {
         $this->capitalRo = $capitalRo;
     }
@@ -116,7 +116,7 @@ class Country extends AbstractEntity
      *
      * @return string
      */
-    public function getCapitalRo()
+    public function getCapitalRo(): string
     {
         return $this->capitalRo;
     }
