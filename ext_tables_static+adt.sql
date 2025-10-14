@@ -89,7 +89,7 @@ UPDATE static_countries SET cn_short_ro='Guatemala' WHERE cn_iso_2='GT';
 UPDATE static_countries SET cn_short_ro='Guam' WHERE cn_iso_2='GU';
 UPDATE static_countries SET cn_short_ro='Guineea Bissau' WHERE cn_iso_2='GW';
 UPDATE static_countries SET cn_short_ro='Guyana' WHERE cn_iso_2='GY';
-UPDATE static_countries SET cn_short_ro='"R.A.S. Hong Kong' WHERE cn_iso_2=' China"' WHERE cn_iso_2='HK';
+UPDATE static_countries SET cn_short_ro='Regiunea Administrativă Specială Hong Kong a Chinei' WHERE cn_iso_2='HK';
 UPDATE static_countries SET cn_short_ro='Honduras' WHERE cn_iso_2='HN';
 UPDATE static_countries SET cn_short_ro='Croaţia' WHERE cn_iso_2='HR';
 UPDATE static_countries SET cn_short_ro='Haiti' WHERE cn_iso_2='HT';
