@@ -11,7 +11,7 @@
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'Static Info Tables (ro)',
     'description' => '(ro) language pack for the Static Info Tables providing localized names for countries.',
-    'version' => '12.4.2',
+    'version' => '12.4.3',
     'category' => 'misc',
     'constraints' => [
         'depends' => [
