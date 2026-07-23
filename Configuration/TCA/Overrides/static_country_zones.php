@@ -1,18 +1,25 @@
 <?php
-defined('TYPO3') || die();
+declare(strict_types=1);
 
-call_user_func(static function ($extKey, $table) {
-    $additionalFields = [
-        'zn_name_en' => 'zn_name_ro'
-    ];
-    foreach ($additionalFields as $sourceField => $destField) {
-        $additionalColumns = [];
-        $additionalColumns[$destField] = $GLOBALS['TCA'][$table]['columns'][$sourceField];
-        $additionalColumns[$destField]['label'] = 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_db.xlf:static_country_zones_item.' . $destField;
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns($table, $additionalColumns);
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes($table, $destField, '',
-            'after:' . $sourceField);
-        // Add as search field
-        $GLOBALS['TCA'][$table]['ctrl']['searchFields'] .= ',' . $destField;
-    }
-}, 'static_info_tables_ro', 'static_country_zones');
+defined('TYPO3') || die;
+
+/*
+ * This file is part of the "Static Info Tables (HU)" extension for TYPO3 CMS.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with this source code.
+ *
+ * 2025-2026 Ephraim Härer <ephraim.haerer@renolit.com>, RENOLIT SE
+ */
+
+use RENOLIT\StaticInfoTablesRo\Provider\TcaProvider;
+
+call_user_func(
+    function ($additionalFields, $dataSetName) {
+        TcaProvider::generateAndRegisterTca($additionalFields, $dataSetName);
+    },
+    [
+        'zn_name_en' => 'zn_name_ro',
+    ],
+    'static_country_zones'
+);

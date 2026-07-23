@@ -7,7 +7,7 @@ namespace SJBR\StaticInfoTables\Domain\Model;
  *
  *  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
  *  (c) 2013 Stanislas Rolland <typo3(arobas)sjbr.ca>
- *  (c) 2021-2025 Ephraim Härer <ephraim.haerer@renolit.com>
+ *  (c) 2021-2026 Ephraim Härer <ephraim.haerer@renolit.com>
  *
  *  All rights reserved
  *
@@ -27,7 +27,6 @@ namespace SJBR\StaticInfoTables\Domain\Model;
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
-
 
 /**
  * The Territory model

@@ -2,7 +2,7 @@
 /* * *************************************************************
  *  Copyright notice
  *
- *  (c) 2021-2025 Timo Feuerstein <timo.feuerstein@renolit.com>
+ *  (c) 2021-2026 Timo Feuerstein <timo.feuerstein@renolit.com>
  *
  *  All rights reserved
  *
